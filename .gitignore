@@ -1,0 +1,12 @@
+# Only include the homework.cls in the specific latexCLS folder, ignore all others
+*.cls
+!latexCLS/homework.cls
+
+# Ignore LateX compilation files
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.gz
+
