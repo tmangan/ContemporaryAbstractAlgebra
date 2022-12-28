@@ -363,8 +363,21 @@ Determine
     \questionpart 
     $7^{1000} = \text{ mod }6$
 
+    \quad Notice, $7=1\text{ mod }6$. This makes our calculations very simple:
+    \begin{align*}
+        7^{1000} &= 1^{1000}\text{ mod }6\\
+                 &= 1 \text{ mod }6\\
+                 &= 1
+    \end{align*}
+
     \questionpart 
     $6^{1001} = \text{ mod }7$
+    \quad Notice again, $6=-1\text{ mod }7$. Thus,
+    \begin{align*}
+        6^{1001} &= -1^{1001}\text{ mod }7\\
+                 &= -1(-1^2)^{500} \text{ mod }7\\
+                 &= -1
+    \end{align*}
 \end{alphaparts}
 
 %%%% SEVENTEEN %%%%
@@ -375,7 +388,15 @@ is needed to make the converse true?
 
 %%%% EIGHTEEN %%%%
 \question 
-Determine $8^{402}=5$.
+Determine $8^{402}\text{ mod }5$.
+
+\quad Notice first that $8^4 = 4096 = 1\text{ mod }5$. So,
+\begin{align*}
+    8^{402} &= 8^2(8^4)^{100}\\
+            &= 64(1)^{100}\text{ mod }5\\
+            &= 4 \text{ mod }5
+\end{align*}
+
 
 %%%% NINETEEN %%%%
 \question 
