@@ -18,15 +18,44 @@
 \question
 With words, describe each symmetry in $D_3$ (the set of symmetries of an equilateral triangle).
 
+Let $a,b,c$ be the points that form an equilateral triangle.
+
+\quad $R_0$: The identity element of the group; does nothing.
+
+\quad $R_{120}$: A clockwise rotation of $120^o$ about the center.
+
+\quad $R_{240}$: A clockwise rotation of $240^o$ about the center.
+
+\quad $F_a$: A reflection of the triangle keeping point $a$ in place.
+
+\quad $F_b$: A reflection of the triangle keeping point $b$ in place.
+
+\quad $F_c$: A reflection of the triangle keeping point $c$ in place.
 
 %%%% TWO %%%%
 \question 
 Write out a complete Cayley table for $D_3$. 
 
+\centering
+\begin{tabular}{cccclll}
+   $D_3$       &  $R_0$     &  $R_{120}$  &  $R_{240}$  & $F_a$     & $F_b$     &  $F_c$  \\
+   $R_0$       &  $R_0$     &  $R_{120}$  &  $R_{240}$  & $F_a$     & $F_b$     &  $F_c$  \\
+   $R_{120}$   &  $R_{120}$ &  $R_{240}$  &  $R_0$      & $F_c$     & $F_a$     &  $F_b$  \\
+   $R_{240}$   &  $R_{240}$ &  $R_0$      &  $R_{120}$  & $F_b$     & $F_c$     &  $F_a$  \\
+   $F_a$       &  $F_a$     &  $F_b$      &  $F_c$      & $R_0$     & $R_{120}$ &  $R_{240}$  \\
+   $F_b$       &  $F_b$     &  $F_c$      &  $F_a$      & $R_{240}$ & $R_0$     &  $R_{120}$  \\
+   $F_c$       &  $F_c$     &  $F_a$      &  $F_b$      & $R_{120}$ & $R_{240}$ &  $R_0$  
+\end{tabular}
+
+\raggedright
 
 %%%% THREE %%%%
 \question 
 Is $D_3$ Abelian?
+
+\quad No, $D_3$ is not Abelian (commutative).
+
+\quad An example of operations on $D_3$ which do not commute is $F_a$ and $F_b$
 
 
 %%%% FOUR %%%%
@@ -39,66 +68,121 @@ Describe in words the elements of $D_5$ (symmetries of a regular pentagon).
 For $n\geq 3$, describe the elements of $D_n$. \textit{(Hint: Consider two cases - n even and n odd.)} 
 How many elements does $D_n$ have?
 
+\quad \textit{Note: differences are in the reflection of the n-gon. For n odd: each corner is assigned a reflection. For n even: 
+half of the corners are assigned a reflection, and half of the sides are assigned a reflection.}
+
+\quad $|D_n| = 2n$
 
 %%%% SIX %%%%
 \question 
 In $D_n$, explain geometrically why a reflection followed by a reflection must be a rotation.
+
+\quad For the following questions concerning geometrical explanations of composing rotations and reflections, we 
+interpret the object being manipulated as a 2-dimensional n-gon. In this fashion, we can assign a "front-side" and "back-side" 
+to the object. 
+
+\quad By performing two subsequent reflections. The resulting operation conserves the polarity (sidedness) of the object. Through
+this perspective, we can see that the resulting operation is not a reflection, and thus is a rotation (or the identity element).
 
 
 %%%% SEVEN %%%%
 \question 
 In $D_n$, explain geometrically why a rotation followed by a rotation must be a rotation.
 
+\quad See explanation for Question 6.
 
 %%%% EIGHT %%%%
 \question 
 In $D_n$, explain geometrically why a rotation and a reflection taken together in either order must be a reflection.
 
+\quad See explanation for Question 6.
 
 %%%% NINE %%%%
 \question 
 Associate the number $+1$ with a rotation and the number $-1$ with a reflection. Describe an analogy between 
 multiplying these two numbers and multiplying elements of $D_n$.
 
+\quad This is similar to the "sidedness" argument of Question 6 in which subsequent rotation operations are analagous 
+to repetitive multiplications of $-1$. The resulting product of the associated numbers ($+1, -1$) is a description of 
+which side of the n-gon is facing the reader. 
 
 %%%% TEN %%%%
 \question 
 If $r_1,r_2,$ and $r_3$ represent rotations from $D_n$ and $f_1,f_2,$ and $f_3$ represent reflections from $D_n$, 
 determine whether $r_1r_2f_1r_3f_2f_3r_3$ is a rotation or a reflection.
 
-
+\quad Using the analogy from Question 9,
+\begin{align*}
+    r_1r_2f_1r_3f_2f_3r_3 &\simeq (+1)(+1)(-1)(+1)(-1)(-1)(+1)\\
+                          &\simeq (-1)\\
+                          &\simeq \text{Reflection}
+\end{align*}
 
 %%%% ELEVEN %%%%
 \question 
 Find elements $A$, $B$, and $C$ in $D_4$ such that $AB=BC$ but $A\neq C$. (Thus, "cross cancellation" is not valid.)
 
+\quad Using the notation from this chapter:
+$$HR_{90} = D' = R_{90}V$$
+$$H \neq V$$
+
+\quad $H$: Horizontal reflection 
+
+\quad $V$: Vertical reflection 
+
+\quad $R_{90}$: $90^o$ rotation about the center
+
+\quad $D'$: Diagonal reflection (SW\&NE corners fixed)
 
 %%%% TWELVE %%%%
 \question 
 Explain what the following diagram proves about the group $D_n$.
 
+\quad In general, $D_n$ is not Abelian (commutative) because: $$FR_{360/n}\neq R_{360/n}F$$
 
 %%%% THIRTEEN %%%%
 \question 
 Describe the symmetries of a nonsquare rectangle. Construct the corresponding Cayley table.
 
+\quad The key difference between the symmetries of a nonsquare rectangle and $D_4$ is the absence of $R_{90}$, $R_{270}$ and the 
+two diagonal reflections $D$ and $D'$.
+
+\centering
+\begin{tabular}{cccclll}
+   x         &  $R_0$     &  $R_{180}$  &  $H$       & $V$        \\
+   $R_0$     &  $R_0$     &  $R_{180}$  &  $H$       & $V$        \\
+   $R_{180}$ &  $R_{180}$ &  $R_0$      &  $V$       & $H$        \\
+   $H$       &  $H$       &  $V$        &  $R_0$     & $R_{180}$  \\
+   $V$       &  $V$       &  $H$        &  $R_{180}$ & $R_0$  
+\end{tabular}
+
+\raggedright
 
 %%%% FOURTEEN %%%%
 \question 
 Describe the symmetries of a parallelogram that is neither a rectangle nor a rhombus. Describe the symmetries of 
 a rhombus that is not a rectangle.
 
+\quad The only symmetry of a nonrectangular-nonrhomboid parallelogram is $R_0 = R_{360}$. 
+
+\quad By assigning each corner of the rhombus a corresponding edge of a nonsquare rectangle we can draw an analogy (isomorphism) 
+between the symmetries of a rhombus and a nonsquare rectangle.
 
 %%%% FIFTEEN %%%%
 \question 
 Describe the symmetries of a noncircular ellipse. Do the same for a hyperbola.
 
+\quad These are the same as the symmetries of the nonsquare rectangle.
 
 %%%% SIXTEEN %%%%
 \question 
 Consider an infinitely long strip of equally spaced H's:
 $$...\text{ H H H H }...$$
 Describe the symmetries of this strip. Is the group of symmetries of the strip Abelian?
+
+\quad This is a cross of the group of integers under addition and the group of symmetries of a nonsquare rectangle.
+
+\quad \textit{Claim:} If $G_1$ and $G_2$ are Abelian, then $G_1 \times G_2$ is also Abelian.
 
 
 %%%% SEVENTEEN %%%%
@@ -118,7 +202,7 @@ Does an airplane propeller have a cyclic symmetry group or a dihedral symmetry g
 
 %%%% TWENTY %%%%
 \question 
-Bottle caps that are pried off sypically have 22 ridges around the rim. Fine the symmetry group of such a cap.
+Bottle caps that are pried off typically have 22 ridges around the rim. Fine the symmetry group of such a cap.
 
 
 %%%% TWENTY ONE %%%%
