@@ -13,113 +13,311 @@
 
 \textbf{\large{Important Statements:}}
 
+\underline{One-Step Subgroup Test:}
+
+\quad Let $G$ be a group and $H$ a nonempty subset of $G$. If $ab^{-1}$ is in $H$ whenever $a$ and $b$ are in $H$,
+then $H$ is a subgroup of $G$. (In additive notation, if $a-b$ is in $H$ whenever $a$ and $b$ are in $H$, then $H$ is 
+a subgroup of $G$.)
+
+\underline{Two-Step Subgroup Test:}
+
+\quad Let $G$ be a group and let $H$ be a nonempty subset of $G$. If $ab$ is in $H$ whenever $a$ and $b$ are in $H$
+($H$ is closed under the operation), and $a^{-1}$ is in $H$ whenever $a$ is in $H$ ($H$ is closed under taking inverses),
+then $H$ is a subgroup of $G$.
+
+
+\underline{Finite Subgroup Test:}
+
+\quad Let $H$ be a nonempty finite subset of a group $G$. If $H$ is closed under the operation of $G$, then 
+$H$ is a subgroup of $G$.
+
+\underline{$\langle a \rangle$ Is a Subgroup:}
+
+\quad Let $G$ be a group, and let $a$ be any element of $G$. Then, $\langle a \rangle$ is a subgroup of $G$.
+
+\underline{Center of a Group:}
+
+\quad The \textit{center}, $Z(G)$, of a group $G$ is the subset of elements in $G$ that commute with every 
+element of $G$. i.e.
+$$Z(G) = \{a \in G \;|\; ax=xa \text{ for all } x \text{ in } G\}$$
+
+\underline{Center is a Subgroup:}
+
+\quad The center of a group $G$ is a subgroup of $G$.
+
+\underline{Centralizer of $a$ in $G$:}
+
+\quad Let $a$ be a fixed element of a group $G$. The \textit{centralizer} of $a$ in $G$, $C(a)$, is the set of 
+all elements in $G$ that commute with $a$. i.e.
+$$C(a) = \{ g \in G \;|\; ga=ag \}$$
+
+\underline{$C(a)$ is a Subgroup:}
+
+\quad For each $a$ in a group $G$, the centralizer of $a$ is a subgroup of $G$.
+
+\underline{Notation:}
+
+\quad $\langle a \rangle = \{a^n \;|\; n\in \mathbb{Z}\}$
+
+\hfill
 
 \textbf{\large{End of Chapter Exercises}}
 
 %%%% ONE %%%%
 \question
+For each group in the following list, find the order of the group and the order of each element in the group.
+What relation do you see between the orders of the elements of a group and the order of the group?
+
+\begin{alphaparts}
+    \questionpart
+    $\mathbb{Z}_{12} = \{0,1,2,3,4,5,6,7,8,9,10,11\}$ 
+
+    \questionpart
+    $U(10) = \{1,3,7,9\}$
+
+    \questionpart
+    $U(12) = \{1,5,7,11\}$
+
+    \questionpart
+    $U(20) = \{1,3,7,9,11,13,17,19\}$
+
+    \questionpart
+    $D_4 = \{R_0,R_{90},R_{180},R_{270},H, V, D, D'\}$
+
+\end{alphaparts}
+
+\quad The order of each element of a group is a divisor of the order of the group.
 
 %%%% TWO %%%%
 \question
+Let $\mathbb{Q}$ be the group of rational numbers under addition and let $\mathbb{Q}^{\star}$ be the group of nonzero rational numbers under 
+multiplication. In $\mathbb{Q}$, list the elements in $\langle \frac{1}{2} \rangle$. In $\mathbb{Q}^{\star}$, list the elements 
+in $\langle \frac{1}{2} \rangle$.
+
+\quad $\langle \frac{1}{2} \rangle$ in $\mathbb{Q} = \{ \frac{n}{2} \;|\; n\in\mathbb{Z}\}$
+
+\quad $\langle \frac{1}{2} \rangle$ in $\mathbb{Q}^{\star} = \{ \left( \frac{1}{2}\right)^n  \;|\; n\in\mathbb{Z}\}$
 
 %%%% THREE %%%%
 \question
+Let $\mathbb{Q}$ and $\mathbb{Q}^{\star}$ be as in Question 2. Find the order of each element in $\mathbb{Q}$ 
+and in $\mathbb{Q}^{\star}$.
+
+\quad The elements of $\mathbb{Q}$ and $\mathbb{Q}^{\star}$ have infinite order, except their respective identity elements.
 
 %%%% FOUR %%%%
 \question
+Prove that in any group, an element and its inverse have the same order.
+
+\quad Let $G$ be a group with element $a$, and $|a| = n$. Then, $n$ is the lowest integer for which $a^n=e$.
+
+\begin{align*}
+    e &= e^{-1}\\
+      &= (a^n)^{-1}\\
+      &= (a*a*\dots*a)^{-1}\\
+      &= a^{-1}*a^{-1}*\dots*a^{-1}\\
+      &= (a^{-1})^n
+\end{align*}
 
 %%%% FIVE %%%%
 \question
+Without actually computing the orders, explain why the two elements in each of the following pairs of elements from $\mathbb{Z}_{30}$ 
+must have the same order: $\{2,28\}, \{8,22\}$. Do the same for the following pairs of elements from $U(15):\{2,8\}, \{7,13\}$.
+
+\quad For $\{2,28\}, \{8,22\}$, it is easy to see that each element is the inverse of its corresponding element. By the previous 
+Question, they have the same order.
+
+\quad For $U(15):\{2,8\}, \{7,13\}$, a similar argument holds. 
+
+\quad More thoroughly, $2+28 = 0\text{ mod }30$ and $8+22 = 0\text{ mod }30$. Also $2*8=16=1\text{ mod }15$ and 
+$7*13=91=1\text{ mod }15$.
 
 %%%% SIX %%%%
 \question
+Suppose that $a$ is a group element and $a^6=e$. What are the possibilities for $|a|$? Provide reasons for your answer.
+
+\quad The posibilities for $|a|$ are 1,2,3, and 6. 
+
+If $a$ itself is the identity element, then $|a|=1$. 
+
+If $a^2=e$, then $a^6=(a^2)^3=e^3=e$. And similarly for $|a|=3$.
+
+If $|a|=4$, then $a^6=e*a^2\neq e$. Also, if $|a|=5$, then $a^6=e*a\neq e$. So neither 4 or 5 are the order of $a$.
 
 %%%% SEVEN %%%%
 \question
+If $a$ is a group element and $a$ has infinite order, prove that $a^m\neq a^n$ when $m\neq n$.
+
+\quad Without loss of generality, assume $m>n$. For the purpose of contradiction, assume $a^m=a^n$.
+\begin{align*}
+    a^m &= a^n*a^{m-n}               &    &\text{Associativity}\\
+        &= a^m*a^{m-n}               &    &\text{Equality of $m$ and $n$}\\
+        &= a^n*a^{m-n}*a^{m-n}       &    &\text{Associativity}\\
+        &= a^m*a^{m-n}*\dots*a^{m-n} &    &\text{Repetition of above}
+\end{align*}
+
+\quad Because we know that $a^{m-n}\neq e$ (else either $|a|=m-n$, or $m=n$ contradicting our assumption), and $a^{m-n}=e$ is the 
+only way the above equalities hold, our presupposition must be false and so $a^m\neq a^n$. $\square$
+
 
 %%%% EIGHT %%%%
 \question
+Let $x$ belong to a group. If $x^2\neq e$ and $x^6=e$, prove that $x^4\neq e$ and $x^5\neq e$. What can we say about the order of $x$?
 
 %%%% NINE %%%%
 \question
+Show that if $a$ is an element of a group $G$, then $|a|\leq |G|$.
 
 %%%% TEN %%%%
 \question
+Show that $U(14)=\langle 3 \rangle = \langle 5 \rangle$. (Hence, $U(14)$ is cyclic.) Is $U(14)=\langle 11 \rangle$?
 
 %%%% ELEVEN %%%%
 \question
+Show that $U(20)\neq \langle k \rangle$ for any $k$ in $U(20)$. (Hence, $U(20)$ is not cyclic.)
 
 %%%% TWELVE %%%%
 \question
+Prove that an Abelian group with two elements of order 2 must have a subgroup of order 4.
 
 %%%% THIRTEEN %%%%
 \question
+Find groups that contain elements $a$ and $b$ such that $|a|, |b|,$ and $|ab|$?
+\begin{alphaparts}
+    \questionpart
+    $|ab|=3$
+
+    \questionpart
+    $|ab|=4$
+
+    \questionpart
+    $|ab|=5$
+
+\end{alphaparts}
 
 %%%% FOURTEEN %%%%
 \question
+Suppose that $H$ is a proper subgroup of $\mathbb{Z}$ under addition and that $H$ contains 18, 30, and 40. 
+What are the possibilities for $H$?
 
 %%%% FIFTEEN %%%%
 \question
+Suppose that $H$ is a proper subgroup of $\mathbb{Z}$ under addition and that $H$ contains 12, 30, and 54. 
+What are the possibilities for $H$?
 
 %%%% SIXTEEN %%%%
 \question
+Prove that the dihedral group of order 6 does not have a subgroup of order 4.
 
 %%%% SEVENTEEN %%%%
 \question
+For each divisor $k>1$ of $n$, let $U_k(n)=\{x\in U(n) \;|\; x \text{ mod } k = 1\}$. 
+(For example, $U_3(21)=\{1,4,10,13,16,19\}$ and $U_7(21)=\{1,8\}$.)
+List the elements of 
+\begin{alphaparts}
+    \questionpart
+    $U_4(20)$
+    \questionpart
+    $U_5(20)$
+    \questionpart
+    $U_5(30)$
+    \questionpart
+    $U_{10}(30)$
 
-%%%% EIGHTTEEN %%%%
+\end{alphaparts}
+
+Prove that $U_k(n)$ is a subgroup of $U(n)$. 
+
+Let $H=\{x\in U(10)\;|\; x\text{ mod }3=1\}$. Is $H$ a subgroup of $U(10)$? 
+
+%%%% EIGHTEEN %%%%
 \question
+If $H$ and $K$ are subgroups of $G$, show that $H\cap K$ is a subgroup of $G$. (Can you see that the same proof shows that the 
+intersection of any number of subgroups of $G$, finite or infinite, is again a subgroup of $G$?)
 
 %%%% NINETEEN %%%%
 \question
+Let $G$ be a group. Show that $Z(G)= \cap_{a\in G}C(a)$. (This means that intersection of all subgroups 
+of the gorm $C(a)$.)
 
 %%%% TWENTY %%%%
 \question
+Let $G$ be a group, and let $a\in G$. Prove that $C(a)=C(a^{-1})$.
 
 %%%% TWENTY ONE %%%%
 \question
+For any group element $a$ and any integer $k$, show that $C(a)\subseteq C(a^k)$.
+Use this fact to complete the following statement: "In a group, if $R$ is an integer and $x$ commutes with $a$, then ...?"
+Is the converse true?
 
 %%%% TWENTY TWO %%%%
 \question
+Complete the partial Cayley group table given below.
 
 %%%% TWENTY THREE %%%%
 \question
+Suppose $G$ is the group defined by the following Cayley table.
+
+\begin{alphaparts}
+    \questionpart
+    Find the centralizer of each memeber of $G$.
+    \questionpart
+    Find $Z(G)$.
+    \questionpart
+    Find the order of each element of $G$. How are these orders arithmetically related to the order of the group?
+\end{alphaparts}
 
 %%%% TWENTY FOUR %%%%
 \question
+If $a$ and $b$ are distinct group elements, prove that either $a^2\neq b^2$ or $a^3\neq b^3$.
 
 %%%% TWENTY FIVE %%%%
 \question
+Prove Theorem 3.6
 
 %%%% TWENTY SIX %%%%
 \question
+Prove that $C(H)$ is a subgroup of $G$.
 
 %%%% TWENTY SEVEN %%%%
 \question
+Must the centralizer of an element of a group be Abelian?
 
 %%%% TWENTY EIGHT %%%%
 \question
+Must the center of a group be Abelian?
 
 %%%% TWENTY NINE %%%%
 \question
+Let $G$ be an Abelian group with identity $e$ and let $n$ be some fixed integer. Prove that the set of all elements 
+of $G$ that satisfy the equation $x^n=e$ is a subgroup of $G$. Give an example of a group $G$ in which the set of all elements of 
+$G$ that satisfy the equation $x^2=e$ does not form a subgroup of $G$.
 
 %%%% THIRTY %%%%
 \question
+Suppose $a$ belongs to a group and $|a|=5$. Prove that $C(a)=C(a^3)$. Find an element $a$ from some group such 
+that $|a|=6$ and $C(a)\neq C(a^3)$.
 
 %%%% THIRTY ONE %%%%
 \question
+Determine all finite subgroups of $\mathbb{R}^{\star}$, the group of nonzero real numbers under multiplication.
 
 %%%% THIRTY TWO %%%%
 \question
+Suppose $n$ is an even positive integer and $H$ is a subgroup of $\mathbb{Z}_n$. Prove that either every member of $H$ is 
+even or exactly half of the members of $H$ are even.
 
 %%%% THIRTY THREE %%%%
 \question
+Suppose a group contains elements $a$ and $b$ such that $|a|=4$, $|b|=2$, and $a^3b=ba$. Find $|ab|$.
 
 %%%% THIRTY FOUR %%%%
 \question
+Suppose $a$ and $b$ are group elements such that $|a|=2, b\neq e,$ and $aba=b^2$. Determine $|b|$.
 
 %%%% THIRTY FIVE %%%%
 \question
+Let $a$ be a group element of order $n$, and suppose that $d$ is a positive divisor of $n$. Prove that $|a^d|=n/d$.
 
 %%%% THIRTY SIX %%%%
 \question
@@ -132,9 +330,14 @@
 
 %%%% THIRTY NINE %%%%
 \question
+Let $G$ be the symmetry group of a circle. Show that $G$ has elements of every finite order as well as 
+elements of infinite order.
 
 %%%% FORTY %%%%
 \question
+Let $x$ belong to a group of $|x|=6$. Find $|x^2|,|x^3|,|x^4|,$ and $|x^5|$. Let $y$ belong to a group 
+and $|y|=9$. Find $|y^i|$ for $i=2,3,...,8$. Do these examples suggest any relationship between the order of the power 
+of an element and the order of the element?
 
 %%%% FORTY ONE %%%%
 \question
