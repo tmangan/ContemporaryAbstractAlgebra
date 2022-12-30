@@ -164,6 +164,17 @@ only way the above equalities hold, our presupposition must be false and so $a^m
 \question
 Let $x$ belong to a group. If $x^2\neq e$ and $x^6=e$, prove that $x^4\neq e$ and $x^5\neq e$. What can we say about the order of $x$?
 
+\quad Clearly, $|a|\neq1\text{ or }2$. 
+
+\quad To see that $x^4\neq e$ we need to show that $x^4=x^{-2}\neq e$. We get $x^4=x^{-2}$ by multiplying both sides of 
+$x^6=e$ with $x^{-2}$. For the purpose of contradiction 
+assume $x^{-2}=e$, then $e=e^{-1}=(x^2)^{-1}\Rightarrow x^2=e$ which goes against our presupposition.
+
+\quad To see that $x^5\neq e$, with a similar argument as above, we need to show that $x^5=x^{-1}\neq e$.
+Again we assume $x^{-1}=e$ but then, $x=e$ and $|x|=1$. So $|a|\neq 5$.
+
+\quad It may be that $|a|$ is either 3 or 6, but no higher.
+
 %%%% NINE %%%%
 \question
 Show that if $a$ is an element of a group $G$, then $|a|\leq |G|$.
@@ -172,13 +183,53 @@ Show that if $a$ is an element of a group $G$, then $|a|\leq |G|$.
 \question
 Show that $U(14)=\langle 3 \rangle = \langle 5 \rangle$. (Hence, $U(14)$ is cyclic.) Is $U(14)=\langle 11 \rangle$?
 
+\quad Firstly, $U(14)=\{1,3,5,9,11,13\}$
+
+\quad Then, 
+\begin{align*}
+    \langle 3\rangle &= \{3^0,3^1,3^2,3^3,3^4,3^5\}\\
+                     &= \{1,3,9,27,81,243\}\\
+                     &= \{1,3,9,13,11,5\}\\
+                     &= U(14)
+\end{align*}
+\quad Similarly, 
+\begin{align*}
+    \langle 5\rangle &= \{5^0,5^1,5^2,5^3,5^4,5^5\}\\
+                     &= \{1,5,25,125,625,3125\}\\
+                     &= \{1,5,11,13,9,3\}\\
+                     &= U(14)
+\end{align*}
+
+\quad We also see that,
+\begin{align*}
+    \langle 11\rangle &= \{11^0,11^1,11^2,11^3,11^4,11^5\}\\
+                      &= \{1,11,121,1331,14641,161051\}\\
+                      &= \{1,11,9,1,11,9\}\\
+                      &\neq U(14)
+\end{align*}
+
 %%%% ELEVEN %%%%
 \question
 Show that $U(20)\neq \langle k \rangle$ for any $k$ in $U(20)$. (Hence, $U(20)$ is not cyclic.)
 
+\quad We have $U(20)=\{1,3,7,9,11,13,17,19\}$ and,
+\begin{align*}
+    \langle 1\rangle &= \{1\}\\
+    \langle 3\rangle &= \{1,3,7,9\}\\
+    \langle 7\rangle &= \{1,3,7,9\}\\
+    \langle 9\rangle &= \{1,9\}\\
+    \langle 11\rangle &= \{1,11\}\\
+    \langle 13\rangle &= \{1,9,13,17\}\\
+    \langle 17\rangle &= \{1,9,13,17\}\\
+    \langle 19\rangle &= \{1,19\}
+\end{align*}
+
 %%%% TWELVE %%%%
 \question
 Prove that an Abelian group with two elements of order 2 must have a subgroup of order 4.
+
+\quad Let $a, b$ be elements of $G$ an Abelian group, and $\langle a\rangle=\langle b\rangle=2$. i.e.
+$$a^2=e\text{ and }b^2=e$$
 
 %%%% THIRTEEN %%%%
 \question
@@ -200,10 +251,17 @@ Find groups that contain elements $a$ and $b$ such that $|a|, |b|,$ and $|ab|$?
 Suppose that $H$ is a proper subgroup of $\mathbb{Z}$ under addition and that $H$ contains 18, 30, and 40. 
 What are the possibilities for $H$?
 
+\quad Our strategy to find the subgroup $H$ we find the smallest element and determine its "span". From $30$ and $40$ we see that 
+$10\in H$. Also, from $18$ and $30$ we have $12\in H$. Therefore we also have $2 \in H$. So,
+$$H=\{2n\;|\; n\in\mathbb{Z}\} = \langle 2\rangle$$ 
+
 %%%% FIFTEEN %%%%
 \question
 Suppose that $H$ is a proper subgroup of $\mathbb{Z}$ under addition and that $H$ contains 12, 30, and 54. 
 What are the possibilities for $H$?
+
+\quad Using the same strategy as above, we find the minimal nonidentity element to be $6$. From this we have that 
+$H=\langle 2\rangle,\langle 3\rangle,\langle 4\rangle,\text{ or }\langle 6\rangle$.
 
 %%%% SIXTEEN %%%%
 \question
