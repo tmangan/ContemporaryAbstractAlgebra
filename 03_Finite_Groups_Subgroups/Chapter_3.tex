@@ -321,12 +321,43 @@ Let $a$ be a group element of order $n$, and suppose that $d$ is a positive divi
 
 %%%% THIRTY SIX %%%%
 \question
+Consider the elements $A = \begin{bmatrix} 0 & -1 \\ 1 & 0 \end{bmatrix}$ and $B = \begin{bmatrix} 0 & 1 \\ -1 & -1 \end{bmatrix}$
+from $SL(2, \mathbb{R})$. Find $|A|,|B|,$ and $|AB|$. Does your answer surprise you?
 
 %%%% THIRTY SEVEN %%%%
 \question
+Consider the element $A = \begin{bmatrix} 1 & 1 \\ 0 & 1 \end{bmatrix}$ in $SL(2,\mathbb{R})$. What is the order of $A$? 
+If we view $A = \begin{bmatrix} 1 & 1 \\ 0 & 1 \end{bmatrix}$ as a member of $SL(2,\mathbb{Z}_p)$ ($p$ is a prime), 
+what is the order of $A$?
 
 %%%% THIRTY EIGHT %%%%
 \question
+For any positive integer $n$ and any angle $\theta$, show that in the group $SL(2,\mathbb{R})$,
+\[
+\begin{bmatrix}
+    \cos\theta & -\sin\theta \\
+    \sin\theta & \cos\theta 
+\end{bmatrix}^n
+=
+\begin{bmatrix}
+    \cos n\theta & -\sin n\theta \\
+    \sin n\theta & \cos n\theta 
+\end{bmatrix}
+\]
+Use this formula to find the order of 
+\[
+\begin{bmatrix}
+    \cos 60^o & -\sin 60^o \\
+    \sin 60^o & \cos 60^o 
+\end{bmatrix}
+\text{ and }
+\begin{bmatrix}
+    \cos\sqrt{2^o} & -\sin\sqrt{2^o} \\
+    \sin\sqrt{2^o} & \cos\sqrt{2^o} 
+\end{bmatrix}
+\]
+(Geometrically, $A = \begin{bmatrix} \cos\theta & -\sin\theta \\ \sin\theta & \cos\theta \end{bmatrix}$ represents a rotation
+of the plane $\theta$ degrees.)
 
 %%%% THIRTY NINE %%%%
 \question
@@ -341,69 +372,140 @@ of an element and the order of the element?
 
 %%%% FORTY ONE %%%%
 \question
+$D_4$ has seven cyclic subgroups. List them. Find a subgroup of $D_4$ of order 4 that is not cyclic.
 
 %%%% FORTY TWO %%%%
 \question
+$U(15)$ has six cyclic subgroups. List them.
 
 %%%% FORTY THREE %%%%
 \question
+Prove that a group of even order must have an element of order 2.
 
 %%%% FORTY FOUR %%%%
 \question
+suppose $G$ is a group that has exactly eight elements of order 3. How many subgroups of order 3 does $G$ have?
 
 %%%% FORTY FIVE %%%%
 \question
+Let $H$ be a subgroup of a finite group $G$. Suppose that $g$ belongs to $G$ and $n$ is the smallest positive integer 
+such that $g^n\in H$. Prove that $n$ divides $|g|$.
 
 %%%% FORTY SIX %%%%
 \question
+Compute the orders of the following groups,
+\begin{alphaparts}
+    \questionpart
+    $U(3),U(4),U(12)$
+    \questionpart
+    $U(5),U(7),U(35)$
+    \questionpart
+    $U(4),U(5),U(20)$
+    \questionpart
+    $U(3),U(5),U(15)$
+\end{alphaparts}
+On the basis of your answers, make a conjecture about the relationship among $|U(r)|,|U(s)|,$ and $|U(rs)|$.
 
 %%%% FORTY SEVEN %%%%
 \question
+Let $\mathbb{R}^\star$ be the group of nonzero real number under multiplication and let 
+$H=\{x\in\mathbb{R}^\star \;|\;x^2 \text{ is rational}\}$. Prove that $H$ is a subgroup of $\mathbb{R}^\star$.
+Cana the exponent 2 be replaced by any positive integer and still have $H$ be a subgroup?
 
 %%%% FORTY EIGHT %%%%
 \question
+Compute $|U(r)|,|U(s)|,$ and $|U(rs)|$. Do these groups provide a counterexample to your answer to Question 46?
+If so, revise your conjecture.
 
 %%%% FORTY NINE %%%%
 \question
+Find a cyclic subgroup of order 4 in $U(40)$.
 
 %%%% FIFTY %%%%
 \question
+Find a noncyclic subgroup of order 4 in $U(40)$.
 
 %%%% FIFTY ONE %%%%
 \question
+Let $G=\left\{\begin{bmatrix} a & b \\ c & d \end{bmatrix} \;|\;a,b,c,d \in \mathbb{Z} \right\}$ under addition.\\
+Let $H=\left\{\begin{bmatrix} a & b \\ c & d \end{bmatrix} \in G\;|\;a+b+c+d=0 \right\}$. Prove that $H$ is a subgroup of $G$.
+What if 0 is replaced by 1?
 
 %%%% FIFTY TWO %%%%
 \question
+Let $H=\{A\in GL(2,\mathbb{R} \;|\; \det A\text{ is an integer power of 2})\}$.Show that $H$ is a subgroup of 
+$GL(2, \mathbb{R})$.
 
 %%%% FIFTY THREE %%%%
 \question
+Let $H$ be a subgroup of $\mathbb{R}$ under addition. Let $K=\{2^a\;|\;a\in H\}$. Prove that $K$ is a subgroup of 
+$\mathbb{R}^\star$ under multiplication.
 
 %%%% FIFTY FOUR %%%%
 \question
+Let $G$ be a group of functions from $\mathbb{R}$ to $\mathbb{R}^\star$, where the operation of $G$ is multiplication 
+of functions. Let $H=\{f\in G\;|\; f(2)=1\}$. Prove that $H$ is a subgroup of $G$. Can 2 be replaced by any real number?
 
 %%%% FIFTY FIVE %%%%
 \question
+Let $G=GL(2,\mathbb{R})$ and $H=\left\{\begin{bmatrix} a & 0 \\ 0 & b \end{bmatrix} \;|\;a\text{ and }b\text{ are 
+nonzero integers}\right\}$ under the operation of matrix multiplication. Prove or disprove that $H$ is a subgroup of 
+$GL(2,\mathbb{R})$.
 
 %%%% FIFTY SIX %%%%
 \question
+Let $H=\{a+bi\;|\; a,b\in\mathbb{R},ab\geq 0\}$. Prove or disprove that $H$ is a subgroup of $\mathbb{C}$ under addition.
 
 %%%% FIFTY SEVEN %%%%
 \question
+Let $H=\{a+bi\;|\; a,b\in\mathbb{R},a^2+b^2=1\}$. Prove or disprove that $H$ is a subgroup of $\mathbb{C}^\star$ under 
+multiplication. Describe the elements of $H$ geometrically.
 
 %%%% FIFTY EIGHT %%%%
 \question
+The smallest subgroup containing a collection of elements $S$ is the subgroup $H$ with the property that if $K$ is any subgroup 
+containing $S$ then $K$ also contains $H$. (So, the smallest subgroup containing $S$ is contained in every subgroup that 
+contains $S$.) The notation for this subgroup is $\langle S \rangle$. In the group $\mathbb{Z}$,find 
+\begin{alphaparts}
+    \questionpart
+    $\langle 8,14 \rangle$
+    \questionpart
+    $\langle 8,13 \rangle$
+    \questionpart
+    $\langle 6,15 \rangle$
+    \questionpart
+    $\langle m,n \rangle$
+    \questionpart
+    $\langle 12,18,45 \rangle$
+\end{alphaparts}
+In each part, find an integer $k$ such that the subgroup is $\langle k\rangle$.
 
 %%%% FIFTY NINE %%%%
 \question
+Let $G=GL(2,\mathbb{R})$.
+\begin{alphaparts}
+    \questionpart
+    Find $C\left(\begin{bmatrix} 1 & 1 \\ 1 & 0 \end{bmatrix}\right)$
+    \questionpart
+    Find $C\left(\begin{bmatrix} 0 & 1 \\ 1 & 0 \end{bmatrix}\right)$
+    \questionpart
+    Find $Z(G)$
+\end{alphaparts}
 
 %%%% SIXTY %%%%
 \question
+Let $G$ be a finite group with more than one element. Show that $G$ has an element of prime order.
 
 %%%% SIXTY ONE %%%%
 \question
+Let $a$ belong to a group and $|a|=m$. If $n$ is relatively prime to $m$, show that $a$ can be written as the $n$th power 
+of some element in the group.
 
 %%%% SIXTY TWO %%%%
 \question
+Let $G$ be a finite Abelian group and let $a$ and $b$ belong to $G$. Prove that the set 
+$\langle a,b\rangle=\{a^ib^j\;|\;i,j \in\mathbb{Z}\}$ is a subgroup of $G$. What can you say about $|\langle a,b\rangle|$ in 
+terms of $|a|$ and $|b|$?
 
 
 
